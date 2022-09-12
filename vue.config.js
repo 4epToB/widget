@@ -1,14 +1,13 @@
 const webpack = require('webpack')
 module.exports = {
-  configureWebpack: {
-    plugins: [
-      new webpack.optimize.LimitChunkCountPlugin({
+  configureWebpack: config => {
+    config.plugins.push(new webpack.optimize.LimitChunkCountPlugin({
         maxChunks: 1
-      })
-    ]
+      }))
   },
   chainWebpack:config => {
       config.optimization.delete('splitChunks')
     },
-  filenameHashing: false
+  filenameHashing: false,
+    publicPath  : process.env.NODE_ENV === 'production' ? 'https://incandescent-lollipop-c5880f.netlify.app':'',
 }
