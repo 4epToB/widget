@@ -1,7 +1,7 @@
 function state () {
   return {
-    cities:[],
-    citiesIndexMap:{}
+    cities: [],
+    suggestions:[],
   }
 }
 

@@ -32,7 +32,7 @@ span{
   font-size: 18px;
   display: block;
   letter-spacing: 0.5px;
-  font-weight: 700;
+
   line-height: 22px;
 }
 h1{
@@ -62,7 +62,7 @@ label{
   padding-bottom: 8px;
 }
 .filledInput{
-  background-color:rgba(216, 218, 238, 0.2) ; 
+  background-color:rgba(216, 218, 238, 0.2) ;
 }
 .input{
   appearance: none;
@@ -73,10 +73,10 @@ label{
   border-radius: 5px;
   font-size: 20px;
   padding: 0px 16px;
-  height: 62px;
+  height: 100%;
   white-space: nowrap;
   text-overflow: ellipsis
-  
+
 }
 
 .dropDown{
@@ -114,6 +114,9 @@ label{
   padding: 0px 16px;
   margin-bottom: 16px;
   cursor: pointer;
+  .field{
+    font-weight: 600;
+  }
 }
 .suggestionWrapper:first-of-type{
   margin-top: 16px;
@@ -163,4 +166,19 @@ label{
   57%  { transform: translateX(15px); }
   64%  { transform: translateX(-15px); }
   100% { transform: translateY(0); }
+}
+button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  line-height: 1;
+  color: rgb(53, 53, 64);
+  font-weight: 500;
+  padding-left: 12px;
+  padding-right: 12px;
 }
